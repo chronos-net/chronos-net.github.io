@@ -1160,3 +1160,45 @@
     display: grid;
     gap: 1rem;
 }
+
+.capability-strip {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.capability-pill {
+    padding: 1rem 1rem 1.05rem;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.capability-pill strong {
+    display: block;
+    margin-bottom: 0.45rem;
+    line-height: 1.35;
+}
+
+.capability-pill span {
+    color: var(--text-muted);
+    line-height: 1.55;
+}
+
+.tech-domain__text--justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+@media (max-width: 980px) {
+    .capability-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .capability-strip {
+        grid-template-columns: 1fr;
+    }
+}
