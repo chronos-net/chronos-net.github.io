@@ -1038,3 +1038,48 @@
 .project-card__meta strong {
     color: var(--text);
 }
+
+.metrics-strip {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.metric-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 140px;
+    padding: 1.2rem 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.02);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.metric-card__value {
+    display: block;
+    margin-bottom: 0.55rem;
+    font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+    font-weight: 800;
+    line-height: 1;
+    color: var(--text);
+}
+
+.metric-card__label {
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+@media (max-width: 980px) {
+    .metrics-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .metrics-strip {
+        grid-template-columns: 1fr;
+    }
+}
