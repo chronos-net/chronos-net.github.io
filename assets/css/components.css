@@ -976,3 +976,8 @@
     text-align: justify;
     text-justify: inter-word;
 }
+
+.project-card__description--justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
