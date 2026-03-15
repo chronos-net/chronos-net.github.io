@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | KRONOS</title>
+    <meta name="description" content="La página solicitada no se encontró dentro del portafolio profesional de Christopher Delgadillo Ramírez.">
+
+    <link rel="icon" href="assets/icons/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/utilities.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 3rem 0;
+        }
+
+        .error-shell {
+            width: 100%;
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 3rem;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            background: rgba(15, 26, 43, 0.82);
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .error-code {
+            margin: 0 0 1rem;
+            font-size: clamp(3rem, 10vw, 6rem);
+            line-height: 1;
+            color: var(--title);
+            letter-spacing: -0.04em;
+        }
+
+        .error-title {
+            margin: 0 0 1rem;
+            font-size: 1.5rem;
+            color: var(--title);
+        }
+
+        .error-text {
+            margin: 0 auto 1.75rem;
+            max-width: 56ch;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .error-actions {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.85rem;
+        }
+
+        @media (max-width: 640px) {
+            .error-shell {
+                padding: 2rem 1.25rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<main class="error-page">
+    <div class="container">
+        <section class="error-shell">
+            <span class="badge">Navegación</span>
+            <h1 class="error-code">404</h1>
+            <h2 class="error-title">La página solicitada no está disponible</h2>
+            <p class="error-text">
+                El recurso que intentas consultar no existe, fue movido o la dirección no es correcta.
+                Puedes volver al portafolio principal y continuar la navegación desde las secciones disponibles.
+            </p>
+
+            <div class="error-actions">
+                <a href="/" class="btn btn-primary">Ir al inicio</a>
+                <a href="/#projects" class="btn btn-secondary">Ver proyectos</a>
+            </div>
+        </section>
+    </div>
+</main>
+</body>
+
+</html>
