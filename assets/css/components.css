@@ -402,7 +402,15 @@
     color: var(--title);
     margin-bottom: 14px;
 }
+.profile-card__text--justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
 
+.timeline-step p {
+    text-align: justify;
+    text-justify: inter-word;
+}
 .profile-card__text {
     color: var(--muted);
     margin-bottom: 16px;
