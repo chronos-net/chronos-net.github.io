@@ -53,6 +53,7 @@
             { selector: "#hero-container", file: "sections/hero.html" },
             { selector: "#profile-container", file: "sections/profile.html" },
             { selector: "#projects-container", file: "sections/projects.html" },
+            { selector: "#credentials-container", file: "sections/credentials.html" },
             { selector: "#technologies-container", file: "sections/technologies.html" },
             { selector: "#contact-container", file: "sections/contact.html" },
             { selector: "#footer-container", file: "sections/footer.html" }
