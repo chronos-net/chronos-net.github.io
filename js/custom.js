@@ -1,10 +1,6 @@
 /*!
- * Item: Kitzu
- * Description: Personal Portfolio Template
- * Author/Developer: Exill
- * Author/Developer URL: https://themeforest.net/user/exill
- * Version: v2.0.1
- * License: Themeforest Standard Licenses: https://themeforest.net/licenses
+ * Christopher Delgadillo — sitio profesional
+ * Cabecera de archivo del proyecto (sin marca de plantilla comercial).
  */
 
 /*----------- CUSTOM JS SCRIPTS -----------*/
