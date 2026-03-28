@@ -290,24 +290,6 @@
       });
     });
 
-    /*----------  Resume: Skills  ----------*/
-
-    ifExists('#resume .skills-section', function() {
-      var initPercentageElement = function() {
-        $('#resume .skills-section .single-skill').each(function() {
-          var percentage = Math.min(100, Math.max(0, $(this).data('percentage')));
-          var barWidth = $(this).find('.skill-progress').outerWidth(true);
-          var percentageElementOffset = barWidth - (barWidth * (percentage / 100));
-          $(this).find('.skill-percentage').text(percentage + '%').css('margin-right', percentageElementOffset);
-          $(this).find('.progress-bar').attr('aria-valuenow', percentage).css('width', percentage + '%');
-        });
-      }
-      initPercentageElement();
-      $(window).on('resize', function() {
-        initPercentageElement();
-      });
-    });
-
     /*----------  Portfolio: Portfolio  ----------*/
 
     ifExists('#portfolio .portfolio-section', function() {
