@@ -1,0 +1,21 @@
+/*!
+  * Item: Kitzu
+  * Description: Personal Portfolio Template
+  * Author/Developer: Exill
+  * Author/Developer URL: https://themeforest.net/user/exill
+  * Version: v2.0.1
+  * License: Themeforest Standard Licenses: https://themeforest.net/licenses
+  */
+
+/*----------- ADD YOUR CUSTOM CSS STYLES BELOW -----------*/
+
+/* Static contact channels: mirror former .contact-form spacing on small screens */
+@media (max-width: 991.98px) {
+  .contact-section .contact-channels-static {
+    margin-bottom: 45px;
+  }
+}
+
+.contact-section .contact-channels-static .content-title {
+  margin-bottom: 22px;
+}

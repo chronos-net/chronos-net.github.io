@@ -179,7 +179,7 @@ Propuesta **sobria** para un repositorio GitHub Pages, separando presentación, 
 
 ## Riesgos y cuidados
 
-1. **Contacto:** riesgo alto de formulario roto en producción Pages hasta reemplazar el backend PHP.
+1. **Contacto:** el bloque de contacto pasó a canales estáticos (`mailto` + LinkedIn); `php/contact.php` queda fuera del flujo funcional (véase nota al final del documento).
 2. **Duplicación de HTML:** dos archivos casi iguales incrementan errores al actualizar secciones.
 3. **Dependencia de terceros:** fuentes Google y YouTube (privacidad, disponibilidad en redes restringidas, cumplimiento normativo en entornos institucionales).
 4. **Ancla navbar / `id` del home:** comportamiento de scroll inconsistente si no se corrige.
@@ -189,11 +189,19 @@ Propuesta **sobria** para un repositorio GitHub Pages, separando presentación, 
 
 ## Siguiente paso prudente (siguiente meta)
 
-1. **Definir** (fuera de esta auditoría) el modelo de contacto en Pages: `mailto`, servicio de formularios, o enlace a perfil profesional.
-2. **Planificar** la eliminación o sustitución de `php/contact.php` y el ajuste mínimo en `main.js` / HTML del formulario cuando se implemente.
+1. **Contacto (hecho en meta posterior):** canales estáticos en `index.html` / `video.html`; sin envío por PHP. Opcional: eliminar `php/contact.php` del repo al publicar o dejarlo solo como referencia no usada.
+2. **Sustituir placeholders** de correo y LinkedIn cuando existan datos definitivos.
 3. **Decidir** si el sitio permanece **monopágina** con secciones renombradas o evoluciona a **multipágina** estática; en ambos casos, alinear el mapa de navegación con los siete módulos mínimos.
 4. **Consolidar** `index.html` vs `video.html` para reducir duplicación.
 5. Reservar **contenido y SEO** para metas explícitas; no adelantar optimización ni redacción final hasta que corresponda.
+
+---
+
+## Nota de implementación: contacto compatible con GitHub Pages
+
+- **Qué:** el formulario que enviaba a `php/contact.php` vía AJAX se sustituyó por un bloque estático “Contact channels” (`mailto` + enlace LinkedIn) en `index.html` y `video.html`. La columna “Contact Info” conserva la lista de apoyo con datos demo marcados como opcionales para reemplazo.
+- **JS:** se eliminó el manejador `submit` / `$.ajax` asociado al formulario en `js/main.js`.
+- **PHP:** `php/contact.php` **no interviene** en el sitio publicado; GitHub Pages no ejecuta PHP. El archivo puede permanecer en el repositorio sin uso o eliminarse en una limpieza futura.
 
 ---
 
