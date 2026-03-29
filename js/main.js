@@ -91,7 +91,7 @@
         'rc-mb-0'
       ],
       [
-        ['#portfolio', '.portfolio-section .single-item .portfolio-item', '.portfolio-wrapper'],
+        ['#proyectos', '.portfolio-section .single-item .portfolio-item', '.portfolio-wrapper'],
         [{
           matchMedia: '(max-width: 991.98px)',
           columns: 2,
@@ -288,13 +288,13 @@
 
     /*----------  Portfolio: Portfolio  ----------*/
 
-    ifExists('#portfolio .portfolio-section', function() {
+    ifExists('#proyectos .portfolio-section', function() {
       /* Setup Isotope */
-      var grid = $('#portfolio .portfolio-section .portfolio-grid');
-      var filters = $('#portfolio .portfolio-section .filter-control li');
+      var grid = $('#proyectos .portfolio-section .portfolio-grid');
+      var filters = $('#proyectos .portfolio-section .filter-control li');
       grid.imagesLoaded(function() {
         grid.isotope({
-          itemSelector: '#portfolio .portfolio-section .single-item',
+          itemSelector: '#proyectos .portfolio-section .single-item',
           masonry: {
             horizontalOrder: true
           }
