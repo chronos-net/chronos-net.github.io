@@ -80,32 +80,10 @@
         'rc-mb-0'
       ],
       [
-        ['#about', '.pricing-section .single-plan', null],
-        [{
-          matchMedia: '(max-width: 991.98px)',
-          columns: 1,
-        }, {
-          matchMedia: '(min-width: 991.98px)',
-          columns: 3,
-        }],
-        'rc-mb-0'
-      ],
-      [
         ['#proyectos', '.portfolio-section .single-item .portfolio-item', '.portfolio-wrapper'],
         [{
           matchMedia: '(max-width: 991.98px)',
           columns: 2,
-        }, {
-          matchMedia: '(min-width: 991.98px)',
-          columns: 3,
-        }],
-        'rc-mb-0'
-      ],
-      [
-        ['#blog', '.blog-section .single-post', null],
-        [{
-          matchMedia: '(max-width: 991.98px)',
-          columns: 1,
         }, {
           matchMedia: '(min-width: 991.98px)',
           columns: 3,

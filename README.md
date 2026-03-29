@@ -15,3 +15,9 @@ Sitio estático de presentación profesional. Despliegue típico: [GitHub Pages]
 ## Recursos
 
 Las rutas de imágenes, fuentes y demás activos referenciados por HTML y CSS deben existir en el repositorio desplegado. Listado orientativo: `docs/dependencias-publicacion.md`.
+
+## Seguridad y publicación
+
+- **HTTPS:** GitHub Pages sirve el sitio por HTTPS; conviene forzar siempre enlaces públicos con `https://`.
+- **CSP y referrer:** Las páginas HTML incluyen una política base vía `<meta http-equiv="Content-Security-Policy">` y `referrer` estricto; detalle y excepciones en `docs/endurecimiento-seguridad-sitio.md`.
+- **Antes de cada deploy:** Revisar que no se añadan scripts o estilos de terceros sin actualizar la CSP; no incluir secretos ni tokens en el repositorio público.
