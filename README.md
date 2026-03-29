@@ -17,6 +17,10 @@ Sitio estático de presentación profesional. Despliegue típico: [GitHub Pages]
 
 Las rutas de imágenes, fuentes y demás activos referenciados por HTML y CSS deben existir en el repositorio desplegado. Listado orientativo: `docs/dependencias-publicacion.md`.
 
+## Rendimiento (base)
+
+Medidas ligeras en HTML/JS (`loading`, dimensiones intrínsecas, `preconnect`/`preload` acotados): ver `docs/optimizacion-rendimiento-base.md`.
+
 ## Seguridad y publicación
 
 - **HTTPS:** GitHub Pages sirve el sitio por HTTPS; conviene forzar siempre enlaces públicos con `https://`.
