@@ -9,6 +9,7 @@ Sitio estático de presentación profesional. Despliegue típico: [GitHub Pages]
 
 ## Publicación (GitHub Pages)
 
+- **URL de producción verificada (Meta 040):** [https://chronos-net.github.io/](https://chronos-net.github.io/) — sitio servido en la **raíz** del dominio `*.github.io` (no en subruta `/portafolio/`).
 - Si el sitio es **usuario u organización** (`username.github.io`), suele publicarse la rama configurada en *Settings → Pages* con `index.html` en la raíz del directorio publicado.
 - Si el sitio vive en un **proyecto** (`username.github.io/repositorio`), las rutas relativas actuales (`css/`, `js/`, `img/`) funcionan siempre que la URL base sea la carpeta del proyecto; si en el futuro se usa subruta distinta, revisar rutas o una meta aparte de *base URL*.
 
