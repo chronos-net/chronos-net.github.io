@@ -80,6 +80,16 @@
   margin-bottom: 0;
 }
 
+/* Meta 045 — visibilidad y scroll del portafolio ampliado en lightbox Proyectos */
+#proyectos.lightbox-wrapper {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+}
+
+#proyectos .lightbox-content {
+  padding-bottom: 3.5rem;
+}
+
 /* Static contact channels: mirror former .contact-form spacing on small screens */
 @media (max-width: 991.98px) {
   .contact-section .contact-channels-static {
