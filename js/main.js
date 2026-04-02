@@ -64,7 +64,23 @@
 
     responsiveColumns([
       [
-        ['#about', '.services-section .single-service', null],
+        ['#about', '#bloque-especializacion-profesional .single-service', null],
+        [{
+            matchMedia: '(max-width: 767.98px)',
+            columns: 1,
+          },
+          {
+            matchMedia: '(max-width: 991.98px)',
+            columns: 2,
+          }, {
+            matchMedia: '(min-width: 991.98px)',
+            columns: 3,
+          }
+        ],
+        'rc-mb-0'
+      ],
+      [
+        ['#about', '#bloque-servicios-profesionales .single-service', null],
         [{
             matchMedia: '(max-width: 767.98px)',
             columns: 1,
