@@ -27,6 +27,59 @@
   text-align: left;
 }
 
+/* Proyectos: portafolio ampliado por líneas (debajo de las 3 tarjetas estratégicas) */
+#proyectos .portfolio-expanded-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 2.25rem;
+  padding-top: 1.75rem;
+}
+
+#proyectos .portfolio-expanded-main-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#proyectos .portfolio-expanded-line {
+  margin-bottom: 1.75rem;
+}
+
+#proyectos .portfolio-expanded-line:last-child {
+  margin-bottom: 0;
+}
+
+#proyectos .portfolio-expanded-line-heading {
+  color: var(--custom, #009e66);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+#proyectos .portfolio-expanded-item {
+  margin-bottom: 1.1rem;
+}
+
+#proyectos .portfolio-expanded-item:last-child {
+  margin-bottom: 0;
+}
+
+#proyectos .portfolio-expanded-name {
+  color: rgba(242, 242, 242, 0.96);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.35;
+  margin-bottom: 0.35rem;
+}
+
+#proyectos .portfolio-expanded-desc {
+  color: rgba(230, 230, 230, 0.86);
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
 /* Static contact channels: mirror former .contact-form spacing on small screens */
 @media (max-width: 991.98px) {
   .contact-section .contact-channels-static {
