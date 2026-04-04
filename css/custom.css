@@ -27,99 +27,202 @@
   text-align: left;
 }
 
-/* Proyectos: portafolio ampliado por líneas (debajo de las 3 tarjetas estratégicas) */
-#proyectos .portfolio-expanded-section {
+/* Meta 048 — Casos emblemáticos (capa superior, mayor peso visual) */
+#proyectos .portfolio-emblematic-block {
+  margin-bottom: 0;
+  padding-bottom: 0.35rem;
+}
+
+#proyectos .portfolio-emblematic-intro {
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+#proyectos .portfolio-emblematic-title {
+  color: rgba(242, 242, 242, 0.98);
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+  margin-bottom: 0.35rem;
+}
+
+#proyectos .portfolio-emblematic-sub {
+  color: rgba(200, 200, 200, 0.82);
+  font-size: 13px;
+  line-height: 1.45;
+  margin: 0 auto;
+  max-width: 28rem;
+}
+
+#proyectos .portfolio-emblematic-grid {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+#proyectos .portfolio-emblematic-grid > .single-item {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#proyectos .portfolio-emblem-micro {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  margin-top: 2.25rem;
-  padding-top: 1.75rem;
+  color: rgba(200, 205, 200, 0.82);
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.45;
+  margin: 12px 0 0;
+  padding-top: 10px;
+}
+
+/* Proyectos: portafolio institucional ampliado (capa inferior) */
+#proyectos .portfolio-expanded-section.portfolio-institutional-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 2.75rem;
+  padding-top: 2.15rem;
+}
+
+#proyectos .portfolio-institutional-section .portfolio-expanded-heading {
+  margin-bottom: 1.5rem;
+}
+
+#proyectos .portfolio-expanded-heading {
+  margin-bottom: 1.35rem;
 }
 
 #proyectos .portfolio-expanded-main-title {
-  font-size: 1.35rem;
+  font-size: 1.22rem;
   font-weight: 600;
   margin-bottom: 0;
 }
 
-/* Meta 046 — portafolio ampliado: paneles / acordeón nativo (details) */
-#proyectos .portfolio-expanded-panels {
+#proyectos .portfolio-expanded-lead {
+  color: rgba(190, 190, 190, 0.78);
+  font-size: 13px;
+  line-height: 1.45;
+  margin: 0.75rem 0 0;
+  max-width: 36rem;
+}
+
+/* Meta 049 — Paneles temáticos + mini-cards; Meta 050 — refinamiento profundidad y capas */
+#proyectos .portfolio-institutional-panels {
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
-  margin-top: 0.25rem;
+  gap: 1.85rem;
+  margin-top: 0.55rem;
 }
 
-#proyectos .portfolio-expanded-panel {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 8px;
+#proyectos .portfolio-institutional-panel {
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 38%, rgba(0, 0, 0, 0.14) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.06) inset,
+    0 22px 56px rgba(0, 0, 0, 0.38),
+    0 8px 20px rgba(0, 0, 0, 0.22);
   overflow: hidden;
+  position: relative;
 }
 
-#proyectos .portfolio-expanded-panel-summary {
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  gap: 0.75rem;
-  justify-content: space-between;
-  list-style: none;
-  min-height: 48px;
-  padding: 0.85rem 1rem 0.85rem 1rem;
-  user-select: none;
-}
-
-#proyectos .portfolio-expanded-panel-summary:focus-visible {
-  outline: 2px solid rgba(0, 158, 102, 0.55);
-  outline-offset: 2px;
-}
-
-#proyectos .portfolio-expanded-panel-summary::-webkit-details-marker {
-  display: none;
-}
-
-#proyectos .portfolio-expanded-panel-summary::after {
-  border-right: 2px solid rgba(255, 255, 255, 0.4);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
-  content: "";
-  flex-shrink: 0;
-  height: 0.45rem;
-  margin-left: 0.5rem;
-  transform: rotate(45deg);
-  transition: transform 0.2s ease;
-  width: 0.45rem;
-}
-
-#proyectos .portfolio-expanded-panel[open] .portfolio-expanded-panel-summary::after {
-  margin-top: 0.2rem;
-  transform: rotate(-135deg);
-}
-
-#proyectos .portfolio-expanded-panel-summary-text {
+#proyectos .portfolio-institutional-panel-title {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.03) 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
   border-left: 3px solid var(--custom, #009e66);
-  color: rgba(242, 242, 242, 0.98);
-  flex: 1;
-  font-size: 0.78rem;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12) inset;
+  color: rgba(245, 245, 245, 0.98);
+  font-size: 0.8rem;
   font-weight: 600;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.07em;
   line-height: 1.35;
-  padding-left: 0.85rem;
-  text-align: left;
+  margin: 0;
+  padding: 1rem 1.05rem 1rem 0.95rem;
   text-transform: uppercase;
 }
 
-#proyectos .portfolio-expanded-panel-body {
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  padding: 0.35rem 1rem 0.65rem;
+#proyectos .portfolio-institutional-panel-intro {
+  background: rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  color: rgba(208, 210, 208, 0.85);
+  font-size: 13px;
+  line-height: 1.55;
+  margin: 0;
+  padding: 0.75rem 1.05rem 0.85rem;
 }
 
-#proyectos .portfolio-expanded-panel-body .portfolio-expanded-item {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+#proyectos .portfolio-institutional-panel-body {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, transparent 48%);
+  padding: 1.15rem 0.85rem 1.15rem;
+}
+
+#proyectos .portfolio-institutional-grid {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+#proyectos .portfolio-institutional-grid > [class*="col-"] {
+  display: flex;
+  margin-bottom: 0.85rem;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+@media (min-width: 768px) {
+  #proyectos .portfolio-institutional-grid > [class*="col-"] {
+    margin-bottom: 1rem;
+  }
+}
+
+#proyectos .portfolio-institutional-panel-body .portfolio-expanded-item.portfolio-mini-card {
+  background: linear-gradient(185deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 45%, rgba(0, 0, 0, 0.1) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 9px;
+  border-top: 2px solid rgba(0, 158, 102, 0.48);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.05) inset,
+    0 6px 20px rgba(0, 0, 0, 0.28),
+    0 2px 8px rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
   margin-bottom: 0;
-  padding: 0.95rem 0;
+  min-height: 100%;
+  padding: 1.05rem 1.1rem 1.15rem;
+  transition: border-color 0.22s ease, box-shadow 0.22s ease, transform 0.22s ease;
 }
 
-#proyectos .portfolio-expanded-panel-body .portfolio-expanded-item:last-child {
-  border-bottom: none;
-  padding-bottom: 0.35rem;
+@media (hover: hover) and (pointer: fine) {
+  #proyectos .portfolio-institutional-panel-body .portfolio-expanded-item.portfolio-mini-card:hover {
+    border-color: rgba(255, 255, 255, 0.16);
+    border-top-color: rgba(0, 158, 102, 0.65);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.07) inset,
+      0 14px 36px rgba(0, 0, 0, 0.38),
+      0 6px 14px rgba(0, 0, 0, 0.22);
+    transform: translateY(-3px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #proyectos .portfolio-institutional-panel-body .portfolio-expanded-item.portfolio-mini-card {
+    transition: none;
+  }
+
+  #proyectos .portfolio-institutional-panel-body .portfolio-expanded-item.portfolio-mini-card:hover {
+    transform: none;
+  }
+}
+
+#proyectos .portfolio-mini-card .portfolio-expanded-desc {
+  flex-grow: 1;
+}
+
+#proyectos .portfolio-expanded-tag {
+  color: rgba(0, 158, 102, 0.88);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.25;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
 }
 
 #proyectos .portfolio-expanded-name {
@@ -127,7 +230,7 @@
   font-size: 15px;
   font-weight: 600;
   line-height: 1.35;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.45rem;
 }
 
 #proyectos .portfolio-expanded-desc {
