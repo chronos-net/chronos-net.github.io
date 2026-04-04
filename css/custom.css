@@ -5,6 +5,11 @@
 
 /*----------- ADD YOUR CUSTOM CSS STYLES BELOW -----------*/
 
+/* Meta 051 — acento azul tecnológico (RGB alineado con --custom en main-darkblue.css, #3365b0) */
+:root {
+  --accent-tech-rgb: 51, 101, 176;
+}
+
 /* Marca textual en navbar (sustituye logo de plantilla) */
 .navbar .navbar-brand .brand-wordmark {
   color: #f3f3f3;
@@ -67,7 +72,7 @@
 
 #proyectos .portfolio-emblem-micro {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  color: rgba(200, 205, 200, 0.82);
+  color: rgba(200, 203, 210, 0.82);
   font-size: 12px;
   font-style: italic;
   line-height: 1.45;
@@ -127,7 +132,7 @@
 #proyectos .portfolio-institutional-panel-title {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.03) 100%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.09);
-  border-left: 3px solid var(--custom, #009e66);
+  border-left: 3px solid var(--custom, #3365b0);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12) inset;
   color: rgba(245, 245, 245, 0.98);
   font-size: 0.8rem;
@@ -142,7 +147,7 @@
 #proyectos .portfolio-institutional-panel-intro {
   background: rgba(0, 0, 0, 0.12);
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-  color: rgba(208, 210, 208, 0.85);
+  color: rgba(206, 208, 214, 0.85);
   font-size: 13px;
   line-height: 1.55;
   margin: 0;
@@ -176,7 +181,7 @@
   background: linear-gradient(185deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 45%, rgba(0, 0, 0, 0.1) 100%);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 9px;
-  border-top: 2px solid rgba(0, 158, 102, 0.48);
+  border-top: 2px solid rgba(var(--accent-tech-rgb), 0.48);
   box-shadow:
     0 1px 0 rgba(255, 255, 255, 0.05) inset,
     0 6px 20px rgba(0, 0, 0, 0.28),
@@ -192,7 +197,7 @@
 @media (hover: hover) and (pointer: fine) {
   #proyectos .portfolio-institutional-panel-body .portfolio-expanded-item.portfolio-mini-card:hover {
     border-color: rgba(255, 255, 255, 0.16);
-    border-top-color: rgba(0, 158, 102, 0.65);
+    border-top-color: rgba(var(--accent-tech-rgb), 0.65);
     box-shadow:
       0 1px 0 rgba(255, 255, 255, 0.07) inset,
       0 14px 36px rgba(0, 0, 0, 0.38),
@@ -216,7 +221,7 @@
 }
 
 #proyectos .portfolio-expanded-tag {
-  color: rgba(0, 158, 102, 0.88);
+  color: rgba(var(--accent-tech-rgb), 0.88);
   font-size: 0.65rem;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -296,7 +301,7 @@
 }
 
 #capacidades .capacities-pillar-title {
-  border-left: 3px solid var(--custom, #009e66);
+  border-left: 3px solid var(--custom, #3365b0);
   color: rgba(242, 242, 242, 0.98);
   font-size: 1.02rem;
   font-weight: 600;
@@ -336,7 +341,7 @@
 
 #capacidades .capacities-pos-pill {
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(0, 158, 102, 0.28);
+  border: 1px solid rgba(var(--accent-tech-rgb), 0.28);
   border-radius: 999px;
   color: rgba(242, 242, 242, 0.94);
   display: inline-block;
@@ -386,7 +391,7 @@
 }
 
 #capacidades .capacities-stack-category {
-  color: var(--custom, #009e66);
+  color: var(--custom, #3365b0);
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.06em;
@@ -422,8 +427,8 @@
 }
 
 #capacidades .capacities-chip-emphasis {
-  background: rgba(0, 158, 102, 0.1);
-  border-color: rgba(0, 158, 102, 0.35);
+  background: rgba(var(--accent-tech-rgb), 0.1);
+  border-color: rgba(var(--accent-tech-rgb), 0.35);
   color: rgba(242, 242, 242, 0.96);
   font-weight: 600;
 }
